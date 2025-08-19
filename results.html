@@ -1,27 +1,81 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
-<html>
-<head>
-<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>SAT Competition</title>
-<link rel="stylesheet" href="main.css" type="text/css">
-<link rel="icon" type="image/x-icon" href="doge2.ico">
-<script src="sorttable.js"></script>
-<script src="https://www.w3schools.com/lib/w3.js"></script>
-<style>
-a#results { color:var(--link-color-2); }
-</style>
-</head>
+<h2>Results</h2>
+<p>Sat Conference presentation <a href="sr15.pdf">slides</a>.
+<h3>Incremental Track</h3>
+<p>
+Detailed results and logs for the incremental track: <a href="results/incr.zip">incr.zip</a>.
+</p>
+<p>
+Winners:
+<ul>
+<li>1st Prize - CryptoMinisat</li>
+<li>1st Prize - COMiniSatPS</li>
+<li>3rd Prize - Glucose</li>
+</ul>
+Rankings for each benchmark separately:
+</p>
+<table>
+<tr><td></td><th colspan="2">Essentials</th><th colspan="2">HWMC</th><th colspan="2">Portfolio</th><th colspan="2">PMaxSat</th></tr>
+<tr><th>Rank</th><th>Solver</th><th>#s</th><th>Solver</th><th>#s</th><th>Solver</th><th>#s</th><th>Solver</th><th>#s</th></tr>
+<tr><td>1</td><td>glucose</td><td>48</td><td>CryptoMiniSat</td><td>1454</td><td>COMiniSatPS-earth</td><td>12</td><td>CryptoMiniSat-auto</td><td>271</td></tr>
+<tr><td>2</td><td>CryptoMiniSat</td><td>48</td><td>CryptoMiniSat-auto</td><td>1452</td><td>satuzk</td><td>5</td><td>CryptoMiniSat</td><td>266</td></tr>
+<tr><td>3</td><td>CryptoMiniSat-auto</td><td>47</td><td>COMiniSatPS-sun</td><td>1434</td><td>picosat961</td><td>5</td><td>glucose</td><td>259</td></tr>
+<tr><td>4</td><td>COMiniSatPS-sun</td><td>45</td><td>glucose</td><td>1407</td><td>COMiniSatPS-sun</td><td>5</td><td>COMiniSatPS-sun</td><td>250</td></tr>
+<tr><td>5</td><td>COMiniSatPS-earth</td><td>45</td><td>COMiniSatPS-earth</td><td>1406</td><td>riss 505</td><td>4</td><td>riss 504</td><td>244</td></tr>
+<tr><td>6</td><td>riss 505</td><td>44</td><td>riss 505</td><td>1372</td><td>riss 504</td><td>2</td><td>COMiniSatPS-earth</td><td>244</td></tr>
+<tr><td>7</td><td>riss 504</td><td>44</td><td>riss 504</td><td>1370</td><td>glucose</td><td>1</td><td>riss 505</td><td>234</td></tr>
+<tr><td>8</td><td>picosat961</td><td>44</td><td>picosat961</td><td>1285</td><td>CryptoMiniSat-auto</td><td>0</td><td>satuzk</td><td>204</td></tr>
+<tr><td>9</td><td>satuzk</td><td>43</td><td>satuzk</td><td>842</td><td>CryptoMiniSat</td><td>0</td><td>picosat961</td><td>165</td></tr>
+</table>
 
-<body>
-<div class="main">
-  <div class="navigation" w3-include-html="navigation.html"></div>
-  <div class="heading" w3-include-html="heading.html"></div>
-  <script>w3.includeHTML();</script> 
-
-  <div class="content">
-	<h2>Results</h2>
-
-  </div>
-</div>
-</body>
-</html>
+<h3>Parallel Track</h3>
+<p>
+Detailed results and logs for the parallel track: <a href="results/para.zip">para.zip</a>
+</p>
+<table>
+<tr><td>glucose-update</td><td>78</td></tr>
+<tr><td>treengeling</td><td>73</td></tr>
+<tr><td>plingeling</td><td>73</td></tr>
+<tr><td>cbpenelope</td><td>66</td></tr>
+<tr><td>glucose-default</td><td>62</td></tr>
+<tr><td>satuzk</td><td>38</td></tr>
+<tr><td>pcasso-bb</td><td>37</td></tr>
+<tr><td>pcasso</td><td>37</td></tr>
+<tr><td>CryptoMiniSat-autotune</td><td>32</td></tr>
+<tr><td>paraglueminisat</td><td>29</td></tr>
+<tr><td>CryptoMiniSat</td><td>29</td></tr>
+</table>
+<h3>Main Track</h3>
+<p>
+Detailed runtimes for solvers and benchmarks: <a href="results/main.zip">main.zip</a>, separeted by SAT and UNSAT instances: <a href="results/res-sat-unsat.zip">res-sat-unsat.zip</a>.
+</p>
+<table>
+<tr><td>Solver</td><td>R1</td><td>R2</td><td>R3</td><td>R4</td><td>R5</td><td>Avg.</td></tr>
+<tr><td>abcdSAT,default</td><td>261</td><td>261</td><td>261</td><td>261</td><td>261</td><td>261</td></tr>
+<tr><td>minisat_BCD,default</td><td>256</td><td>256</td><td>256</td><td>257</td><td>257</td><td>256.4</td></tr>
+<tr><td>riss_505,blackbox</td><td>248</td><td>248</td><td>249</td><td>252</td><td>250</td><td>249.4</td></tr>
+<tr><td>COMiniSatPS_Subdwarf,Subdwarf</td><td>247</td><td>247</td><td>246</td><td>247</td><td>247</td><td>246.8</td></tr>
+<tr><td>COMiniSatPS_Main_Sequence,MainSequence</td><td>246</td><td>247</td><td>246</td><td>247</td><td>246</td><td>246.4</td></tr>
+<tr><td>Lingeling_sr15baq,lingeling-sr15baq</td><td>244</td><td>245</td><td>245</td><td>244</td><td>245</td><td>244.6</td></tr>
+<tr><td>GlueMiniSat_2.2.10,default</td><td>244</td><td>244</td><td>243</td><td>244</td><td>244</td><td>243.8</td></tr>
+<tr><td>CryptoMiniSat-autotune,default</td><td>242</td><td>243</td><td>242</td><td>242</td><td>241</td><td>242</td></tr>
+<tr><td>Lingeling_sr15bal,lingeling-sr15bal</td><td>242</td><td>242</td><td>241</td><td>241</td><td>241</td><td>241.4</td></tr>
+<tr><td>BreakIDGlucose2,default</td><td>241</td><td>241</td><td>240</td><td>241</td><td>241</td><td>240.8</td></tr>
+<tr><td>GlueMiniSat_2.2.10-5,default</td><td>239</td><td>241</td><td>240</td><td>240</td><td>243</td><td>240.6</td></tr>
+<tr><td>ADS-glucose-adapt,default</td><td>239</td><td>240</td><td>241</td><td>241</td><td>241</td><td>240.4</td></tr>
+<tr><td>riss_505,default</td><td>237</td><td>238</td><td>237</td><td>239</td><td>239</td><td>238</td></tr>
+<tr><td>CryptoMiniSat,default</td><td>237</td><td>238</td><td>238</td><td>237</td><td>237</td><td>237.4</td></tr>
+<tr><td>Glucose_nbSatRsltn,default</td><td>235</td><td>236</td><td>236</td><td>235</td><td>236</td><td>235.6</td></tr>
+<tr><td>glucose-community-switching,default</td><td>235</td><td>234</td><td>235</td><td>235</td><td>236</td><td>235</td></tr>
+<tr><td>glueminisat-Actmini,default</td><td>234</td><td>235</td><td>235</td><td>235</td><td>236</td><td>235</td></tr>
+<tr><td>or-tools,script.sh</td><td>234</td><td>234</td><td>234</td><td>234</td><td>234</td><td>234</td></tr>
+<tr><td>CCAglucose2015,default.sh</td><td>232</td><td>232</td><td>232</td><td>232</td><td>232</td><td>232</td></tr>
+<tr><td>multi-sat-g2_0,default</td><td>232</td><td>232</td><td>232</td><td>232</td><td>232</td><td>232</td></tr>
+<tr><td>glucose-default,default</td><td>231</td><td>232</td><td>231</td><td>233</td><td>232</td><td>231.8</td></tr>
+<tr><td>Glucose_nbSat,default</td><td>231</td><td>232</td><td>232</td><td>232</td><td>232</td><td>231.8</td></tr>
+<tr><td>multi-sat-g2_2,default</td><td>229</td><td>230</td><td>229</td><td>230</td><td>231</td><td>229.8</td></tr>
+<tr><td>Nigma-1.2.86,default</td><td>229</td><td>229</td><td>228</td><td>227</td><td>227</td><td>228</td></tr>
+<tr><td>Nigma-1.2.87,default</td><td>226</td><td>227</td><td>227</td><td>226</td><td>227</td><td>226.6</td></tr>
+<tr><td>dccaSatToRiss,default</td><td>215</td><td>214</td><td>214</td><td>215</td><td>215</td><td>214.6</td></tr>
+<tr><td>satUZK-seq,default</td><td>165</td><td>166</td><td>166</td><td>166</td><td>166</td><td>165.8</td></tr>
+<tr><td>ratselfax_cnf_215_final,ratselfax_cnf_final</td><td>83</td><td>85</td><td>84</td><td>82</td><td>82</td><td>83.2</td></tr>
+</table>
